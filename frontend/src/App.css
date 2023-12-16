@@ -1,0 +1,149 @@
+.App {
+  
+  
+  text-align: center;
+  color: black;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(151,193,183);
+  height: 100vh;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.button{
+  border: none;
+  padding: 10px;
+  /* background-color: #92ade4; */
+  border-radius: 8px;
+  font-weight: bold;
+  /* color: #410122; */
+  font-size: 18px;
+  margin: 20px;
+  transition: transform 300ms;
+  transition: box-shadow 100ms;
+}
+.button-2{
+  border: none;
+  padding: 10px;
+  /* background-color: #e49292; */
+  border-radius: 8px;
+  font-weight: bold;
+  /* color: #410122; */
+  font-size: 18px;
+  margin: 20px;
+  transition: transform 300ms;
+  transition: box-shadow 100ms;
+}
+.button:hover , .button-2:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 6px rgb(85, 85, 87);
+}
+
+.inputs{
+  height: 20px;
+  border-radius: 5px;
+  border: .5px solid rgb(55, 54, 54);
+}
+
+.inputs:focus{
+  border: 2px solid rgb(102, 252, 102);
+  outline: none;
+  box-shadow: 0px 0px 4px black;
+  /* margin-top: 10px; */
+}
+
+.logout{
+  position: absolute;
+  top: 0px;
+  right: -10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80px;
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
