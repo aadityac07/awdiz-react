@@ -44,6 +44,7 @@ import toast from "react-hot-toast";
                 const response = await api.post("/auth/currentUser" , {token})
              if(response.data.success){
                  Login(response.data.user)
+                 toast.success("login gathered")
              }
             }
             catch(error){

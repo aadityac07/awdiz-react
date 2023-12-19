@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import toast from 'react-hot-toast';
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "./context/AuthContext";
-import InvoiceCalculator from "./Invoicecalculator";
-import InvoiceForm from "./InvoiceForm";
+// import InvoiceCalculator from "./Invoicecalculator";
+// import InvoiceForm from "./InvoiceForm";
 
 function Homepage() {
     const locate = useNavigate();

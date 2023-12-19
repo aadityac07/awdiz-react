@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import InvoiceForm from './InvoiceForm';
+// import InvoiceForm from './InvoiceForm';
 
 const App = () => {
     const [invoiceItems, setInvoiceItems] = useState([]);

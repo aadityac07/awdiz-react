@@ -45,7 +45,7 @@ const AddProduct = () => {
 
     useEffect(()=>{
         console.log(state.user)
-        if(state?.user && state?.user?.name === undefined || state?.user && state?.user?.name === null){
+        if((state?.user && state?.user?.name === undefined) || (state?.user && state?.user?.name === null)){
             // setTimeout(
                 // ()=>{
                     navigate("/login")

@@ -1,12 +1,17 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext'
+import toast from 'react-hot-toast'
 
 const Navbar = () => {
     const router = useNavigate()
     const { state, Logout } = useContext(AuthContext)
-
+    useEffect(()=>{
+        if(state?.user){
+            toast.success(state?.user?.name)
+        }
+    })
     return (
         <div style={{ display: "flex", justifyContent: 'space-around',width: "100vw", height: "40px",backgroundColor:"grey",color:'white', fontSize: "20px" ,position:'absolute',top:'0px',left:"0px"}}>
             <div onClick={() => router('/')} style={{ width: '20%'}}>Home</div>
